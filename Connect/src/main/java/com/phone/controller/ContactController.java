@@ -53,7 +53,7 @@ public class ContactController {
     public  ResponseEntity<List<Contact>> getAllContactsByName(@PathVariable ("name") String name){
 
         List<Contact> allContactsByName =  iContactService.getContactsByName(name);
-
+        System.out.println(" I am in controller class");
         return  new ResponseEntity<>(allContactsByName, HttpStatus.OK);
     }
 
