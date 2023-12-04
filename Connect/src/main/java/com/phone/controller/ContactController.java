@@ -54,6 +54,8 @@ public class ContactController {
 
         List<Contact> allContactsByName =  iContactService.getContactsByName(name);
 
+        System.out.println(" Added contacts to see merge process");
+        System.out.println("Added another sout statement");
         return  new ResponseEntity<>(allContactsByName, HttpStatus.OK);
     }
 
