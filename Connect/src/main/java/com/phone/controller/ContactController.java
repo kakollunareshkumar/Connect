@@ -75,6 +75,7 @@ public class ContactController {
 
         int mult  = a*b;
         System.out.println(" Added a*b in main branch");
+         System.out.println(" Added another sout statement to see fetch and pull difference");
         return  new ResponseEntity<Integer>(mult, HttpStatus.OK);
     }
 
