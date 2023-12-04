@@ -74,6 +74,7 @@ public class ContactController {
     public ResponseEntity<Integer> getaddition(int a, int b){
 
         int mult  = a*b;
+        System.out.println(" Added a*b in main branch");
         return  new ResponseEntity<Integer>(mult, HttpStatus.OK);
     }
 
