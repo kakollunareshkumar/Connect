@@ -82,4 +82,16 @@ public class ContactController {
     }
 
 
+    
+    @GetMapping("/all/divide")
+    public ResponseEntity<Integer> getdivide(int a, int b){
+
+        int mult  = a/b;
+        System.out.println(" Added a/b in main branch");
+         System.out.println(" Added another sout statement to see merge from main to delete_swagger1");
+        System.out.println(" Added another sout statement  to see merge conflicts");
+        
+        return  new ResponseEntity<Integer>(mult, HttpStatus.OK);
+    }
+
 }
