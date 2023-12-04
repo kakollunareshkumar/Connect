@@ -62,6 +62,14 @@ public class ContactController {
         return  new ResponseEntity<>(allContactsByName, HttpStatus.OK);
     }
 
+    @GetMapping("/all/add")
+    public ResponseEntity<Integer> getMultiplication(int a, int b){
+
+        int add  = a+b;
+        return  new ResponseEntity<Integer>(add, HttpStatus.OK);
+    }
+
+
     @GetMapping("/all/multiply")
     public ResponseEntity<Integer> getMultiplication(int a, int b){
 
