@@ -56,7 +56,17 @@ public class ContactController {
 
         System.out.println(" Added contacts to see merge process");
         System.out.println("Added another sout statement");
+        int rand  = (int) Math.random();
+        System.out.println("multiplication of 2  numbers "+rand*4);
+
         return  new ResponseEntity<>(allContactsByName, HttpStatus.OK);
+    }
+
+    @GetMapping("/all/multiply")
+    public ResponseEntity<Integer> getMultiplication(int a, int b){
+
+        int mult  = a*b;
+        return  new ResponseEntity<Integer>(mult, HttpStatus.OK);
     }
 
 
