@@ -93,5 +93,15 @@ public class ContactController {
         
         return  new ResponseEntity<Integer>(mult, HttpStatus.OK);
     }
+   
+    @GetMapping("/all/mod")
+    public ResponseEntity<Integer> getdivide(int a, int b){
 
+        int mult  = a%b;
+        System.out.println(" Added a%b in main branch");
+         System.out.println(" Added another sout statement to see difference between local and remote branches in IDE");
+        System.out.println(" Added another sout statement  to new changes by creating a new branch with remote repository branch ");
+        
+        return  new ResponseEntity<Integer>(mult, HttpStatus.OK);
+    }
 }
