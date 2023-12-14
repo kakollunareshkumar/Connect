@@ -22,6 +22,7 @@ public class ContactController {
    public  ResponseEntity<Contact> addContact(@RequestBody @Valid Contact contact){
 
        Contact addedContact = iContactService.addContact(contact);
+       //Hello how are you
 
        return  new ResponseEntity<>(addedContact, HttpStatus.ACCEPTED);
    }
