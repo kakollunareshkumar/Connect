@@ -117,7 +117,7 @@ public class ContactController {
     }
 
         @GetMapping("/all/usa")
-    public ResponseEntity<Integer> getduplicate(int a, int b){
+    public ResponseEntity<Integer> getUsa(int a, int b){
          System.out.println("I am in USA");
         System.out.println(" Added another sout statement  to new changes by creating a new branch with remote repository branch ");
         
@@ -125,7 +125,7 @@ public class ContactController {
     }
 
         @GetMapping("/all/texas")
-    public ResponseEntity<Integer> getduplicate(int a, int b){
+    public ResponseEntity<Integer> getTexas(int a, int b){
          System.out.println("I am in texas");
         System.out.println(" Added another sout statement  to new changes by creating a new branch with remote repository branch ");
         
