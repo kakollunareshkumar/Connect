@@ -115,4 +115,20 @@ public class ContactController {
         
         return  new ResponseEntity<Integer>(mult, HttpStatus.OK);
     }
+
+        @GetMapping("/all/usa")
+    public ResponseEntity<Integer> getduplicate(int a, int b){
+         System.out.println("I am in USA");
+        System.out.println(" Added another sout statement  to new changes by creating a new branch with remote repository branch ");
+        
+        return  new ResponseEntity<Integer>(mult, HttpStatus.OK);
+    }
+
+        @GetMapping("/all/texas")
+    public ResponseEntity<Integer> getduplicate(int a, int b){
+         System.out.println("I am in texas");
+        System.out.println(" Added another sout statement  to new changes by creating a new branch with remote repository branch ");
+        
+        return  new ResponseEntity<Integer>(mult, HttpStatus.OK);
+    }
 }
